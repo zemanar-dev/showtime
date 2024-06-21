@@ -72,6 +72,11 @@ nav .btn-group a{
 .btn-group a{
     position: relative;
 }
+nav .bx {
+    font-size: 50px;
+    color: var(--light-red-color);
+    display: none;
+}
 nav ul a li::after, .btn-group a::after{
     content: '';
     display: inline-block;
@@ -408,13 +413,16 @@ html::-webkit-scrollbar {
 
   @media screen and (max-width:640px) {
     nav {
-        padding: 10px;
+        padding: 15px;
     }
     .logo img {
-        width: 100%;
+        width: 125%;
     }
     nav ul {
         display: none;
+    }
+    nav .bx {
+        display: block;
     }
     section {
         padding: 15px;
@@ -424,17 +432,19 @@ html::-webkit-scrollbar {
     }
     .home .hero-text {
         max-width: 100%;
-        padding: 10px;
+        padding: 30px;
         margin-left: 0;
     }
     .hero-text h2 {
-        font-size: 20px;
+        font-size: 35px;
+        letter-spacing: 0;
     }
     .hero-text p {
-        font-size: 8px;
+        font-size: 10px;
+        margin: 9px 0;
     }
     .btn {
-        font-size: 10px;
+        font-size: 13px;
     }
     .home img {
         width: 100%;
@@ -470,6 +480,9 @@ html::-webkit-scrollbar {
         padding: 20px 10px;
     }
     .footer {
+        width: 100%;
+    }
+    .contact {
         width: 100%;
     }
   }
